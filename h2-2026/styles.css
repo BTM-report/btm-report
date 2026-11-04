@@ -417,6 +417,35 @@ a { color: inherit; }
    REPORT EXTENSIONS — additive, reuse website tokens & .tag pattern
    ═══════════════════════════════════════════════════════════════ */
 
+/* ── Brand logo image (uploaded SAP logo PNG) ── */
+.brand__logo { display: inline-flex; align-items: center; }
+.brand__img {
+  height: 44px;        /* within 40–50px spec */
+  width: auto;         /* preserve aspect ratio — no stretch/distort/crop */
+  display: block;
+}
+@media (max-width: 920px) { .brand__img { height: 40px; } }
+@media (max-width: 600px) { .brand__img { height: 38px; } }
+
+/* ── Event media (Sapphire / TechEd card) — side by side, height-capped ── */
+.event-media {
+  display: flex;
+  flex-direction: row;
+  gap: var(--s3);
+  align-self: start;
+}
+.event-media__img {
+  flex: 1 1 0;               /* two equal-width halves */
+  min-width: 0;
+  height: 150px;             /* fixed cap → card stays compact, no vertical growth */
+  object-fit: contain;       /* preserve aspect ratio — no stretch, no crop */
+  border-radius: var(--r-md);
+  border: 1px solid var(--line);
+  box-shadow: var(--e1);
+  background: #fff;
+}
+@media (max-width: 600px) { .event-media__img { height: 120px; } }
+
 /* ── Status badge (reuses semantic .tag colors: Completed/Confirmed/Planned) ── */
 .status {
   display: inline-block;
