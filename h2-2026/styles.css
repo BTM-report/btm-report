@@ -434,6 +434,16 @@ a { color: inherit; }
   gap: var(--s3);
   align-self: start;
 }
+
+/* ── Two-column resource links (compact side-by-side) ── */
+.link-cols {
+  display: flex;
+  gap: var(--s4);
+  flex-wrap: wrap;
+  margin-top: var(--s1);
+}
+.link-cols .more { flex: 1 1 0; min-width: 0; margin-top: 0; }
+@media (max-width: 600px) { .link-cols { flex-direction: column; gap: var(--s2); } }
 .event-media__img {
   flex: 1 1 0;               /* two equal-width halves */
   min-width: 0;
