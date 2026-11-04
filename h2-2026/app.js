@@ -55,27 +55,28 @@
   Chart.defaults.font.size   = 12;
   Chart.defaults.color       = INK;
 
-  /* ── Bar: activities by section (counts) ── */
+  /* ── Horizontal bar: activities by section (counts) ── */
   const bar = document.getElementById('barChart');
   if (bar) {
     new Chart(bar, {
       type: 'bar',
       data: {
-        labels: ['Thought\nLeadership', 'Sapphire\n& TechEd', 'Events &\nSpeaking', 'Analyst\nRelations', 'Employee\nComms', 'Strategic\nProjects'],
+        labels: ['Thought Leadership', 'BTM Content', 'SAP Events', 'Employee Comms', 'Strategic Projects', 'In Process'],
         datasets: [{
           label: 'Activities',
-          data: [4, 4, 2, 1, 10, 2],   // real counts — sums to 23
+          data: [5, 4, 6, 13, 4, 5],   // real card counts per section
           backgroundColor: PALETTE[0],
           borderRadius: 4,
-          maxBarThickness: 46
+          maxBarThickness: 30
         }]
       },
       options: {
+        indexAxis: 'y',            // horizontal — full labels readable, no overlap
         responsive: true,
-        plugins: { legend: { display: false }, tooltip: { callbacks: { title: items => String(items[0].label).replace(/\n/g, ' ') } } },
+        plugins: { legend: { display: false } },
         scales: {
-          x: { grid: { display: false }, ticks: { autoSkip: false, maxRotation: 0, font: { size: 10 } } },
-          y: { grid: { color: LINE }, beginAtZero: true, ticks: { precision: 0, stepSize: 2 } }
+          x: { grid: { color: LINE }, beginAtZero: true, ticks: { precision: 0, stepSize: 2 } },
+          y: { grid: { display: false }, ticks: { autoSkip: false, font: { size: 12 } } }
         }
       }
     });
