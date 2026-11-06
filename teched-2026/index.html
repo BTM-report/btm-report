@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SAP TechEd 2026 — Interactive Learning Hub for Communications Professionals. Understand SAP's AI strategy, Business AI Platform, Joule, BDC, and BTM.">
+<meta property="og:title" content="SAP TechEd 2026 Learning Hub">
+<meta property="og:description" content="30 minutes to understand SAP's entire AI and Business Transformation story.">
+<meta property="og:type" content="website">
+<title>SAP TechEd 2026 — Learning Hub</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav id="main-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <div class="nav-logo-dot">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <circle cx="8" cy="8" r="6" fill="white" opacity="0.9"/>
+        </svg>
+      </div>
+      <span>SAP TechEd '26</span>
+    </div>
+    <div class="nav-links" role="list">
+      <a href="#teched" role="listitem">TechEd</a>
+      <a href="#big-picture" role="listitem">Big Picture</a>
+      <a href="#top5" role="listitem">Top 5</a>
+      <a href="#baip" role="listitem">AI Platform</a>
+      <a href="#joule" role="listitem">Joule</a>
+      <a href="#bdc" role="listitem">BDC</a>
+      <a href="#btm" role="listitem">BTM</a>
+      <a href="#ecosystem" role="listitem">Ecosystem</a>
+      <a href="#toolkit" role="listitem">Toolkit</a>
+      <a href="#study" role="listitem">Study</a>
+    </div>
+    <div class="nav-actions">
+      <input type="search" id="nav-search" placeholder="Search…" aria-label="Search content">
+      <button class="nav-theme-btn" id="theme-btn" aria-label="Toggle dark mode">🌙</button>
+      <button class="mobile-menu-btn" aria-label="Open menu">☰</button>
+    </div>
+    <div class="nav-progress-bar" id="nav-progress" role="progressbar" aria-label="Reading progress"></div>
+  </div>
+</nav>
+
+<!-- ── Hero ── -->
+<header id="hero" role="banner">
+  <div class="hero-bg">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        SAP TechEd 2026 · 30th Anniversary
+      </div>
+      <h1 class="hero-title">Build Things<br><span>That Matter</span></h1>
+      <p class="hero-subtitle">Your 30-minute guide to SAP's AI strategy, the Business AI Platform, Joule, Business Data Cloud, and everything that connects them — written for communicators, not engineers.</p>
+      <div class="hero-cta-group">
+        <a href="#teched" class="btn-primary">Start Learning ↓</a>
+        <a href="#toolkit" class="btn-ghost">Communicator Toolkit</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num">10</div>
+          <div class="hero-stat-lbl">Topics Covered</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">300+</div>
+          <div class="hero-stat-lbl">AI Agents Launched</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">30</div>
+          <div class="hero-stat-lbl">Minutes to Understand All</div>
+        </div>
+      </div>
+      <div style="margin-top:16px;">
+        <span id="progress-label" style="font-size:0.78rem;color:rgba(255,255,255,0.4);">0% explored</span>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-card">
+        <div class="hero-card-icon" style="background:rgba(0,112,242,0.3);">🤖</div>
+        <div class="hero-card-text">
+          <div class="hero-card-title">Autonomous Enterprise</div>
+          <div class="hero-card-sub">AI as the operating model</div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-icon" style="background:rgba(0,184,212,0.3);">💬</div>
+        <div class="hero-card-text">
+          <div class="hero-card-title">Joule Work — Redesigned</div>
+          <div class="hero-card-sub">Every device, every task</div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-icon" style="background:rgba(139,92,246,0.3);">🏭</div>
+        <div class="hero-card-text">
+          <div class="hero-card-title">Physical AI by SAP</div>
+          <div class="hero-card-sub">Robots on the factory floor</div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-icon" style="background:rgba(16,185,129,0.3);">📊</div>
+        <div class="hero-card-text">
+          <div class="hero-card-title">Business Data Cloud</div>
+          <div class="hero-card-sub">Trusted data for every AI answer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-indicator" aria-hidden="true">
+    <div class="scroll-arrow"></div>
+    <span>Scroll to explore</span>
+  </div>
+</header>
+
+<main id="main-content">
+
+<!-- ══════════════════════════════════════════════
+     SECTION 1 — WHAT HAPPENED AT TECHED?
+══════════════════════════════════════════════ -->
+<section id="teched" class="section" aria-labelledby="teched-heading">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-label">Section 1</div>
+      <h2 id="teched-heading">What Happened at SAP TechEd 2026?</h2>
+      <p>SAP's annual developer and architect conference turned 30 — and used the milestone to announce its most ambitious platform evolution ever.</p>
+    </div>
+
+    <div class="teched-intro-grid fade-in">
+      <div class="teched-intro-text">
+        <p><strong>SAP TechEd</strong> is SAP's flagship annual conference for developers, architects, and technical builders — the place where SAP shows the world what's possible. Think of it as SAP's version of Apple's WWDC: announcements, demos, hands-on learning, and the clearest signal of where SAP is heading.</p>
+        <p>The 2026 edition marks the <strong>30th anniversary</strong> of TechEd. SAP used this milestone to do something unprecedented: announce not just individual products, but an entirely new way of running a business — the <strong>Autonomous Enterprise</strong>. AI is no longer a feature you add to SAP. It is the new operating model.</p>
+        <p>The overall market message SAP wanted to send was clear and bold:</p>
+        <div class="teched-big-message" style="margin-top:20px;">
+          <div class="label">The Message to the Market</div>
+          <div class="message">"AI isn't something you plan for — it's available today, it runs your business, it knows your data, and it works from the back office to the factory floor. One click to activate."</div>
+        </div>
+      </div>
+      <div class="teched-anniversary fade-in">
+        <div class="num">30</div>
+        <div class="lbl">Years of TechEd</div>
+        <div class="sub">1996 → 2026<br>From ISDN to Autonomous AI</div>
+        <br>
+        <div style="font-size:0.82rem;color:var(--text-muted);line-height:1.6;">
+          <strong style="color:var(--text-primary);">Theme:</strong><br>"Build Things That Matter"<br><br>
+          <strong style="color:var(--text-primary);">Duration:</strong><br>90-minute opening keynote<br><br>
+          <strong style="color:var(--text-primary);">Attendance:</strong><br>Developers, architects, enterprise IT leaders worldwide
+        </div>
+      </div>
+    </div>
+
+    <!-- Top 5 Moments -->
+    <div class="fade-in" style="margin-bottom:24px;">
+      <h3 style="margin-bottom:8px;">Top 5 Moments</h3>
+      <p style="color:var(--text-muted);font-size:0.9rem;">The five things that made TechEd 2026 different from any year before.</p>
+    </div>
+    <div class="top5-grid fade-in" aria-label="Top 5 TechEd Moments">
+      <div class="top5-card">
+        <div class="t5-icon">🤖</div>
+        <div class="t5-label">Robots on stage — Physical AI by SAP connects decisions to physical machines</div>
+      </div>
+      <div class="top5-card">
+        <div class="t5-icon">💻</div>
+        <div class="t5-label">Joule Work gets a full computer: terminal, Python, browser — deep reasoning</div>
+      </div>
+      <div class="top5-card">
+        <div class="t5-icon">📦</div>
+        <div class="t5-label">300+ AI agents across every business domain — available now, one click</div>
+      </div>
+      <div class="top5-card">
+        <div class="t5-icon">🛰️</div>
+        <div class="t5-label">SAP's AI models running on the ISS Columbus module in outer space</div>
+      </div>
+      <div class="top5-card">
+        <div class="t5-icon">🔒</div>
+        <div class="t5-label">EU AI Act–aligned governance loop built directly into the platform</div>
+      </div>
+    </div>
+
+    <!-- All Announcements -->
+    <div class="fade-in" style="margin:48px 0 20px;">
+      <h3>All Key Announcements</h3>
+      <p style="color:var(--text-muted);font-size:0.9rem;">Every major announcement from the keynote, with availability status.</p>
+    </div>
+    <div class="announcements-grid" role="list">
+
+      <article class="announcement-card fade-in" role="listitem">
+        <div class="ac-header">
+          <div class="ac-num">01</div>
+          <span class="badge badge-ga">GA</span>
+        </div>
+        <div class="ac-title">Joule Work — Full Redesign</div>
+        <div class="ac-desc">Spaces (live intent-driven dashboards), Agentic Thinking harness (terminal + Python + browser), plus native macOS, Windows, iOS, Android, and CarPlay apps.</div>
+      </article>
+
+      <article class="announcement-card fade-in" role="listitem">
+        <div class="ac-header">
+          <div class="ac-num">02</div>
+          <span class="badge badge-ga">GA</span>
+        </div>
+        <div class="ac-title">SAP Autonomous Suite — 300+ Agents</div>
+        <div class="ac-desc">40 AI assistants and 300+ agents across every business domain. All ISO and SOC compliant. Available today, one click to activate.</div>
+      </article>
+
+      <article class="announcement-card fade-in" role="listitem">
+        <div class="ac-header">
+          <div class="ac-num">03</div>
+          <span class="badge badge-pilot">GA Pilot</span>
+        </div>
+        <div class="ac-title">Physical AI by SAP</div>
+        <div class="ac-desc">Boston Dynamics Spot and AGIBOT robots integrated with SAP. Business decisions become physical actions. Already piloted with Intel in Chengdu manufacturing.</div>
+      </article>
+
+      <article class="announcement-card fade-in" role="listitem">
+        <div class="ac-header">
+          <div class="ac-num">04</div>
+          <span class="badge badge-ga">GA</span>
+        </div>
+        <div class="ac-title">SAP Agent Gateway</div>
+        <div class="ac-desc">Connects agents across any landscape using A2A (Agent-to-Agent) open standard. Identity verified, permissions enforced, every action traced.</div>
+      </article>
+
+      <article class="announcement-card fade-in" role="listitem">
+        <div class="ac-header">
+          <div class="ac-num">05</div>
+          <span class="badge badge-ga">GA</span>
+        </div>
+        <div class="ac-title">SAP Enterprise AI Gateway</div>
+        <div class="ac-desc">Full AI control plane for all MCPs, APIs, and LLMs. Built on Integration Suite. Rate limiting, routing, policy enforcement, observability — all in one place.</div>
+      </article>
+
+      <article class="announcement-card fade-in" role="listitem">
+        <div class="ac-header">
+          <div class="ac-num">06</div>
+          <span class="badge badge-soon">Q1 2027</span>
+        </div>
+        <div class="ac-title">SAP Lakehouse + Dremio</div>
+        <div class="ac-desc">47% faster, 58% cheaper analytics on Apache Iceberg. Non-SAP data without copying it. Benchmark: 1TB processed in 3 minutes (or 25 seconds with reflections).</div>
+      </article>
+
+      <article class="announcement-card fade-in" role="listitem">
+        <div class="ac-header">
+          <div class="ac-num">07</div>
+          <span class="badge badge-soon">Announced</span>
+        </div>
+        <div class="ac-title">SAP Application Data Foundation</div>
+        <div class="ac-desc">With Databricks: on-premises ECC, BW, and S/4 data flowing directly into Business Data Cloud. Finally unlocks the most important data enterprises have.</div>
+      </article>
+
+      <article class="announcement-card fade-in" role="listitem">
+        <div class="ac-header">
+          <div class="ac-num">08</div>
+          <span class="badge badge-soon">Announced</span>
+        </div>
+        <div class="ac-title">SAP Databricks Full Expansion</div>
+        <div class="ac-desc">Complete Databricks platform natively in BDC: LakeFlow, Agent Bricks, Unity Gateway, and Genie paired with Joule for contextual data queries.</div>
+      </article>
+
+      <article class="announcement-card fade-in" role="listitem">
+        <div class="ac-header">
+          <div class="ac-num">09</div>
+          <span class="badge badge-soon">Q4 2026</span>
+        </div>
+        <div class="ac-title">SAP-RPT-2 Tabular AI Models</div>
+        <div class="ac-desc">New capabilities: time series forecasting, enterprise decisions, anomaly detection, embeddings, and multi-table support. 20+ NeurIPS 2026 papers.</div>
+      </article>
+
+      <article class="announcement-card fade-in" role="listitem">
+        <div class="ac-header">
+          <div class="ac-num">10</div>
+          <span class="badge badge-ga">GA</span>
+        </div>
+        <div class="ac-title">TabPFN-3.5 (Prior Labs, now SAP)</div>
+        <div class="ac-desc">SAP acquired Prior Labs. TabPFN-3.5 is now the top benchmark model in thinking mode for structured data — fully available in SAP AI Core.</div>
+      </article>
+
+      <article class="announcement-card fade-in" role="listitem">
+        <div class="ac-header">
+          <div class="ac-num">11</div>
+          <span class="badge badge-beta">Beta</span>
+        </div>
+        <div class="ac-title">BDC Ontology Manager</div>
+        <div class="ac-desc">Enrich the SAP Knowledge Graph with industry-specific concepts. Full W3C standard support: RDF, OWL, SHACL. Early partners: Henkel, Adobe, NEC.</div>
+      </article>
+
+      <article class="announcement-card fade-in" role="listitem">
+        <div class="ac-header">
+          <div class="ac-num">12</div>
+          <span class="badge badge-soon">This Quarter</span>
+        </div>
+        <div class="ac-title">Tenant-Aware Knowledge Graph</div>
+        <div class="ac-desc">Custom fields, custom business objects, and custom data products are now automatically added to the SAP Knowledge Graph in the background.</div>
+      </article>
+
+      <article class="announcement-card fade-in" role="listitem">
+        <div class="ac-header">
+          <div class="ac-num">13</div>
+          <span class="badge badge-soon">Rolling Out</span>
+        </div>
+        <div class="ac-title">850+ SAP-Managed Data Products</div>
+        <div class="ac-desc">Semantic, rich, no ETL required. The entire SAP data model available as ready-to-use data products for AI agents and applications.</div>
+      </article>
+
+      <article class="announcement-card fade-in" role="listitem">
+        <div class="ac-header">
+          <div class="ac-num">14</div>
+          <span class="badge badge-eac">EAC Nov 2026</span>
+        </div>
+        <div class="ac-title">AI Governance Assistant</div>
+        <div class="ac-desc">EU AI Act–aligned risk classification for every agent. Audit-ready. Human approval required before finalization. GA rollout following EAC.</div>
+      </article>
+
+      <article class="announcement-card fade-in" role="listitem">
+        <div class="ac-header">
+          <div class="ac-num">15</div>
+          <span class="badge badge-ga">GA</span>
+        </div>
+        <div class="ac-title">SAP Signavio Agent Mining</div>
+        <div class="ac-desc">Reveals where agents deviate from expected behavior, where work stalls, and which changes deliver most business value. Proves ROI of AI deployments.</div>
+      </article>
+
+      <article class="announcement-card fade-in" role="listitem">
+        <div class="ac-header">
+          <div class="ac-num">16</div>
+          <span class="badge badge-ga">GA since May</span>
+        </div>
+        <div class="ac-title">Process Consulting Agent</div>
+        <div class="ac-desc">Identifies where AI creates most value in your business. €3.5B in optimization potential identified across 300+ customers. Generates a CFO-ready business case.</div>
+      </article>
+
+      <article class="announcement-card fade-in" role="listitem">
+        <div class="ac-header">
+          <div class="ac-num">17</div>
+          <span class="badge badge-pilot">Live Demo</span>
+        </div>
+        <div class="ac-title">Physical AI Demo: Spot Robot</div>
+        <div class="ac-desc">Pump overheating alert → Spot robot deployed → confirmed heat + found undetected air leak → Joule Work auto-generated maintenance work order. First enterprise AI to physical action.</div>
+      </article>
+
+      <article class="announcement-card fade-in" role="listitem">
+        <div class="ac-header">
+          <div class="ac-num">18</div>
+          <span class="badge badge-soon">Research</span>
+        </div>
+        <div class="ac-title">Space-Based Compute with HPE</div>
+        <div class="ac-desc">SAP's RPT tabular AI models running on the ISS Columbus module for spacecraft telemetry reconstruction and anomaly detection. AI proven under extreme conditions.</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 2 — THE BIG PICTURE
+══════════════════════════════════════════════ -->
+<section id="big-picture" class="section section-alt" aria-labelledby="bigpicture-heading">
+  <div class="container">
+    <div class="section-header centered fade-in">
+      <div class="section-label">Section 2</div>
+      <h2 id="bigpicture-heading">The Big Picture</h2>
+      <p>How everything SAP is doing right now connects — and why it all points in the same direction.</p>
+    </div>
+
+    <div class="strategy-cascade" role="img" aria-label="SAP Strategy Cascade Diagram">
+      <div class="cascade-layer cl-1 fade-in">
+        <div class="cl-label">Foundation</div>
+        <div class="cl-title">SAP Strategy — The Autonomous Enterprise</div>
+        <div class="cl-desc">SAP's north star: reimagine every business process end-to-end with AI. Not AI as a tool — AI as the operating model of the enterprise itself.</div>
+      </div>
+      <div class="cascade-arrow" aria-hidden="true"></div>
+      <div class="cascade-layer cl-2 fade-in">
+        <div class="cl-label">The Platform</div>
+        <div class="cl-title">Business AI Platform (BAIP)</div>
+        <div class="cl-desc">SAP's unified foundation for building, running, and governing AI agents, apps, and automations. Three pillars: Build, Contextualize &amp; Reason, Govern. One click to provision.</div>
+      </div>
+      <div class="cascade-arrow" aria-hidden="true"></div>
+      <div class="cascade-layer cl-3 fade-in">
+        <div class="cl-label">The Interface</div>
+        <div class="cl-title">Joule &amp; Joule Work</div>
+        <div class="cl-desc">The AI-first experience layer where every user — finance, HR, supply chain, operations — interacts with SAP. Not a chatbot: an intelligent operating environment across every device.</div>
+      </div>
+      <div class="cascade-arrow" aria-hidden="true"></div>
+      <div class="cascade-layer cl-4 fade-in">
+        <div class="cl-label">The Data Foundation</div>
+        <div class="cl-title">Business Data Cloud (BDC)</div>
+        <div class="cl-desc">Makes AI answers trustworthy. Connects all enterprise data — SAP and non-SAP, cloud and on-prem — into one semantic layer without copying or moving anything.</div>
+      </div>
+      <div class="cascade-arrow" aria-hidden="true"></div>
+      <div class="cascade-layer cl-5 fade-in">
+        <div class="cl-label">The Applications</div>
+        <div class="cl-title">Business Applications — S/4HANA, SuccessFactors, Ariba…</div>
+        <div class="cl-desc">SAP's suite of enterprise applications. They still run your ERP, HR, procurement, supply chain — but now they're the execution layer beneath AI agents that act on your behalf.</div>
+      </div>
+      <div class="cascade-arrow" aria-hidden="true"></div>
+      <div class="cascade-layer cl-6 fade-in">
+        <div class="cl-label">The Outcome</div>
+        <div class="cl-title">Business Outcomes — Measured, Governed, Continuous</div>
+        <div class="cl-desc">68% faster financial close. 15% procurement savings. 60% faster supplier risk response. AI isn't measured in features — it's measured in outcomes that matter to the business.</div>
+      </div>
+    </div>
+
+    <div class="problem-box fade-in">
+      <div class="pb-icon">💡</div>
+      <div>
+        <div class="pb-label">The Problem SAP Is Solving</div>
+        <div class="pb-title">Why can't every company just use ChatGPT for this?</div>
+        <div class="pb-text">Generic AI is powerful — but it doesn't know your ERP data, your procurement rules, your compliance obligations, or your 50-year business process history. SAP's Business AI Platform is differentiated by <strong>context</strong>: 7 million+ fields, 500,000+ tables, 15,000+ business processes mapped and available to Joule at runtime. That's the difference between an AI that guesses and an AI that knows.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 3 — IF I REMEMBER ONLY 5 THINGS
+══════════════════════════════════════════════ -->
+<section id="top5" class="section section-dark" aria-labelledby="top5-heading">
+  <div class="container">
+    <div class="section-header centered fade-in">
+      <div class="section-label">Section 3</div>
+      <h2 id="top5-heading">If I Remember Only 5 Things</h2>
+      <p>The five messages that matter most. Click each card to reveal the full explanation.</p>
+    </div>
+
+    <div class="flip-cards-grid" role="list" aria-label="Top 5 strategic messages — click to flip">
+
+      <div class="flip-card" role="listitem" tabindex="0" aria-label="Card 1: The Autonomous Enterprise is real and available now. Click to flip.">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="fc-num">1</div>
+            <div class="fc-stmt">The Autonomous Enterprise is real — and it's available now</div>
+            <div class="fc-hint">Click to learn more →</div>
+          </div>
+          <div class="flip-card-back">
+            <div class="fb-num">Message 1 of 5</div>
+            <div class="fb-title">The Autonomous Enterprise is real and available now</div>
+            <div class="fb-body">Every capability SAP announced at TechEd 2026 is either GA (generally available) or entering Early Adopter Care before year-end. This is not a roadmap — it is a product. Single-click provisioning means no infrastructure assembly, no architecture decisions before you can start. SAP provisions it, operates it, and manages it.</div>
+            <div class="fb-pitch">"SAP's Autonomous Enterprise isn't coming — it's here."</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" role="listitem" tabindex="0" aria-label="Card 2: SAP AI knows your business. Click to flip.">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="fc-num">2</div>
+            <div class="fc-stmt">SAP AI knows your business — generic AI doesn't</div>
+            <div class="fc-hint">Click to learn more →</div>
+          </div>
+          <div class="flip-card-back">
+            <div class="fb-num">Message 2 of 5</div>
+            <div class="fb-title">Context is SAP's unfair advantage</div>
+            <div class="fb-body">ChatGPT and Microsoft Copilot are powerful — but they're context-free. They don't know your ERP data, your cost centers, your compliance rules, or your workflows. SAP's Knowledge Graph maps 7M+ fields, 500K+ tables, and 15K+ processes. Joule answers your business questions correctly because it already knows the answer. A generic LLM has to guess.</div>
+            <div class="fb-pitch">"The same AI model answers 2× faster and more accurately when SAP context is baked in."</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" role="listitem" tabindex="0" aria-label="Card 3: 300+ agents ready to run. Click to flip.">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="fc-num">3</div>
+            <div class="fc-stmt">300+ agents are ready to run — no build required</div>
+            <div class="fc-hint">Click to learn more →</div>
+          </div>
+          <div class="flip-card-back">
+            <div class="fb-num">Message 3 of 5</div>
+            <div class="fb-title">The AI baseline is already built</div>
+            <div class="fb-body">SAP delivers 40 AI assistants and 300+ agents covering finance, HR, procurement, supply chain, operations, and manufacturing — all ISO and SOC compliant, all SAP-managed. Customers don't need to build from scratch. Novartis's Sourcing Assistant went live in days. The standard agent is the starting point; customers extend it without rebuilding it.</div>
+            <div class="fb-pitch">"SAP customers have a 300-agent head start on every competitor building from scratch."</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" role="listitem" tabindex="0" aria-label="Card 4: Data is the differentiator. Click to flip.">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="fc-num">4</div>
+            <div class="fc-stmt">Data is the differentiator — BDC makes it trustworthy</div>
+            <div class="fc-hint">Click to learn more →</div>
+          </div>
+          <div class="flip-card-back">
+            <div class="fb-num">Message 4 of 5</div>
+            <div class="fb-title">Trusted data = trusted AI</div>
+            <div class="fb-body">AI systems are only as powerful as the data they run on. Enterprise data lives in hundreds of systems across multiple clouds and on-premises. Business Data Cloud solves this without ETL, without data movement, 47% faster and 58% cheaper. SAP Reltio creates golden master data records. 850+ SAP-managed data products are available immediately.</div>
+            <div class="fb-pitch">"AI that answers incorrectly isn't AI — it's liability. BDC is what makes SAP's AI trustworthy."</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" role="listitem" tabindex="0" aria-label="Card 5: Governance built in. Click to flip.">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="fc-num">5</div>
+            <div class="fc-stmt">Governance isn't optional — SAP built it in from day one</div>
+            <div class="fc-hint">Click to learn more →</div>
+          </div>
+          <div class="flip-card-back">
+            <div class="fb-num">Message 5 of 5</div>
+            <div class="fb-title">Governance is what makes scale possible</div>
+            <div class="fb-body">LeanIX research shows that only 17% of companies can currently see what their AI agents do. SAP's governance loop — AI Agent Discovery → EU AI Act risk classification → runtime enforcement → Cloud ALM observability → Signavio Agent Mining — is closed-loop and built into the platform. Unverified agents are blocked at runtime. Every action is traced.</div>
+            <div class="fb-pitch">"Governance isn't what slows AI adoption. It's what makes adoption at scale possible."</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <p class="flip-hint" aria-live="polite">Click any card to reveal the full explanation and elevator pitch</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 4 — THE SAP AI STORY (BAIP)
+══════════════════════════════════════════════ -->
+<section id="baip" class="section" aria-labelledby="baip-heading">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-label">Section 4</div>
+      <h2 id="baip-heading">The SAP AI Story: Business AI Platform</h2>
+      <p>SAP's unified enterprise AI foundation — and the three capabilities that make it work.</p>
+    </div>
+
+    <div class="baip-platform-desc fade-in">
+      <div>
+        <h3>What is the Business AI Platform?</h3>
+        <p>SAP Business AI Platform is SAP's unified enterprise AI foundation, helping organizations <strong>build</strong>, <strong>run</strong>, and <strong>govern</strong> AI agents, applications, and automations. It provides the foundation for AI across finance, HR, supply chain, customer experience, and procurement — with the same business context making every agent smarter, faster, and more accurate.</p>
+      </div>
+      <div class="baip-platform-stat">
+        <div class="ps-num">1-click</div>
+        <div class="ps-lbl">SAP provisions &amp; manages it</div>
+      </div>
+    </div>
+
+    <div class="pillars-grid" role="list" aria-label="Business AI Platform Three Pillars">
+
+      <!-- BUILD -->
+      <article class="pillar-card pillar-build fade-in" role="listitem">
+        <div class="pillar-header">
+          <div class="pillar-icon-bg">🔨</div>
+          <div class="pillar-icon">🔨</div>
+          <div class="pillar-name">Pillar 1</div>
+          <div class="pillar-tagline">Build — Extend &amp; Integrate</div>
+        </div>
+        <div class="pillar-body">
+          <div class="pillar-section">
+            <div class="pillar-section-label">What It Means</div>
+            <p>Build and extend enterprise AI applications with your own custom logic, data sources, and approval workflows — without rebuilding the standard agents SAP already provides.</p>
+          </div>
+          <div class="pillar-section">
+            <div class="pillar-section-label">Business Value</div>
+            <p>Agent development time drops from 13 hours to 2.5 hours. Token cost per task drops 50%. The Process Consulting Agent identifies where to build first, with a CFO-ready business case.</p>
+          </div>
+          <div class="pillar-section">
+            <div class="pillar-section-label">Real-World Example</div>
+            <p>Emilia at TechEd: noticed a viral social post was causing demand spike for a product. Used Joule Studio to extend the existing product-launch agent with social media analysis — in minutes, not months.</p>
+          </div>
+          <div class="pillar-talking-point">"You don't need to start from scratch. SAP delivers the AI baseline — you extend it for your specific business rules."</div>
+        </div>
+      </article>
+
+      <!-- CONTEXTUALIZE & REASON -->
+      <article class="pillar-card pillar-context fade-in" role="listitem">
+        <div class="pillar-header">
+          <div class="pillar-icon-bg">🧠</div>
+          <div class="pillar-icon">🧠</div>
+          <div class="pillar-name">Pillar 2</div>
+          <div class="pillar-tagline">Contextualize &amp; Reason — Trust AI Decisions</div>
+        </div>
+        <div class="pillar-body">
+          <div class="pillar-section">
+            <div class="pillar-section-label">What It Means</div>
+            <p>AI decisions are grounded in your actual business context — your data, your processes, your master data. Not guesswork from a general-purpose model.</p>
+          </div>
+          <div class="pillar-section">
+            <div class="pillar-section-label">Business Value</div>
+            <p>Joule answers 2× faster and more accurately than a generic LLM. 850+ SAP-managed data products available immediately — no ETL. Knowledge Graph maps 7M+ fields across 500K tables.</p>
+          </div>
+          <div class="pillar-section">
+            <div class="pillar-section-label">Real-World Example</div>
+            <p>Asked "How many vacant positions are in Germany vs US?" — Joule answered correctly in seconds by joining HR and finance tables through the Knowledge Graph. A generic LLM gave a plausible but wrong answer.</p>
+          </div>
+          <div class="pillar-talking-point">"SAP's AI answers correctly because it knows your data — not because it sounds confident."</div>
+        </div>
+      </article>
+
+      <!-- GOVERN -->
+      <article class="pillar-card pillar-govern fade-in" role="listitem">
+        <div class="pillar-header">
+          <div class="pillar-icon-bg">🛡️</div>
+          <div class="pillar-icon">🛡️</div>
+          <div class="pillar-name">Pillar 3</div>
+          <div class="pillar-tagline">Govern — Complete Visibility &amp; Control</div>
+        </div>
+        <div class="pillar-body">
+          <div class="pillar-section">
+            <div class="pillar-section-label">What It Means</div>
+            <p>Complete visibility, accountability, and security over every AI decision. Design-time classification → runtime enforcement. Closed loop from discovery to optimization.</p>
+          </div>
+          <div class="pillar-section">
+            <div class="pillar-section-label">Business Value</div>
+            <p>Only 17% of companies can see what their agents do. SAP solves this. EU AI Act risk classification built in. Unverified agents are blocked at runtime. 200+ customers, 600K+ agents governed.</p>
+          </div>
+          <div class="pillar-section">
+            <div class="pillar-section-label">Real-World Example</div>
+            <p>SAP's governance loop: AI Agent Discovery identifies every agent → AI Governance Assistant classifies EU AI Act risk → Enterprise AI Gateway blocks unverified agents → Cloud ALM traces every action → Signavio Agent Mining finds improvement opportunities.</p>
+          </div>
+          <div class="pillar-talking-point">"Governance is not what slows AI adoption. It is what makes adoption at scale possible."</div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="metrics-row" aria-label="Key Business Metrics">
+      <div class="metric-card fade-in">
+        <div class="mc-num">68%</div>
+        <div class="mc-lbl">Faster financial close (Consolidation Assistant)</div>
+      </div>
+      <div class="metric-card fade-in">
+        <div class="mc-num">15%</div>
+        <div class="mc-lbl">TCO reduction (Sourcing Assistant)</div>
+      </div>
+      <div class="metric-card fade-in">
+        <div class="mc-num">60%</div>
+        <div class="mc-lbl">Faster supplier risk detection (Supplier Mgmt Agent)</div>
+      </div>
+      <div class="metric-card fade-in">
+        <div class="mc-num">€3.5B</div>
+        <div class="mc-lbl">Optimization potential identified via Process Consulting Agent</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 5 — UNDERSTANDING JOULE
+══════════════════════════════════════════════ -->
+<section id="joule" class="section section-alt" aria-labelledby="joule-heading">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-label">Section 5</div>
+      <h2 id="joule-heading">Understanding Joule</h2>
+      <p>What Joule is, what changed at TechEd 2026, and why it's different from every other AI assistant.</p>
+    </div>
+
+    <!-- Comparison -->
+    <div class="joule-compare fade-in" role="region" aria-label="Joule Work vs Generic AI comparison">
+      <div class="compare-card joule-card">
+        <div class="cc-header">
+          <div class="cc-logo">💎</div>
+          <div>
+            <div class="cc-name">Joule Work</div>
+            <div class="cc-type">SAP Business AI Platform</div>
+          </div>
+        </div>
+        <div class="compare-row">
+          <span class="cr-icon">✅</span>
+          <p><strong>Knows your SAP data</strong> — 7M+ fields, 500K+ tables, 15K+ business processes pre-mapped</p>
+        </div>
+        <div class="compare-row">
+          <span class="cr-icon">✅</span>
+          <p><strong>Answers correctly</strong> — grounded in your actual ERP, HR, finance, and supply chain data</p>
+        </div>
+        <div class="compare-row">
+          <span class="cr-icon">✅</span>
+          <p><strong>Takes action</strong> — 300+ agents execute tasks, not just recommend them</p>
+        </div>
+        <div class="compare-row">
+          <span class="cr-icon">✅</span>
+          <p><strong>Governed &amp; compliant</strong> — ISO/SOC certified, EU AI Act aligned, every action traced</p>
+        </div>
+        <div class="compare-row">
+          <span class="cr-icon">✅</span>
+          <p><strong>Agentic Thinking</strong> — full computer harness for complex multi-step reasoning</p>
+        </div>
+        <div class="compare-row">
+          <span class="cr-icon">✅</span>
+          <p><strong>Everywhere</strong> — web, desktop, iOS, Android, CarPlay, foldables</p>
+        </div>
+      </div>
+      <div class="compare-card generic-card">
+        <div class="cc-header">
+          <div class="cc-logo" style="background:var(--surface-alt);color:var(--text-muted);font-size:1.3rem;">🤖</div>
+          <div>
+            <div class="cc-name">Generic AI (ChatGPT / Copilot)</div>
+            <div class="cc-type">General-Purpose AI</div>
+          </div>
+        </div>
+        <div class="compare-row">
+          <span class="cr-icon joule-gap">❌</span>
+          <p><strong>Doesn't know your ERP</strong> — no access to your cost centers, workflows, or business rules</p>
+        </div>
+        <div class="compare-row">
+          <span class="cr-icon joule-gap">❌</span>
+          <p><strong>Answers plausibly</strong> — sounds confident but can be wrong about your specific business</p>
+        </div>
+        <div class="compare-row">
+          <span class="cr-icon joule-gap">❌</span>
+          <p><strong>Advises but doesn't act</strong> — no integration with your business systems to execute</p>
+        </div>
+        <div class="compare-row">
+          <span class="cr-icon joule-gap">❌</span>
+          <p><strong>Governance is your problem</strong> — you must build compliance, auditing, and safety yourself</p>
+        </div>
+        <div class="compare-row">
+          <span class="cr-icon">⚠️</span>
+          <p><strong>General reasoning</strong> — powerful for knowledge work but not enterprise workflows</p>
+        </div>
+        <div class="compare-row">
+          <span class="cr-icon">⚠️</span>
+          <p><strong>Web &amp; desktop</strong> — good coverage but not natively integrated with your SAP estate</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- What Changed at TechEd -->
+    <div class="fade-in" style="margin-bottom:20px;">
+      <h3>What Changed at TechEd 2026</h3>
+      <p style="color:var(--text-muted);font-size:0.9rem;">Six major upgrades to Joule announced or demonstrated at the keynote.</p>
+    </div>
+    <div class="joule-features-grid fade-in" role="list">
+      <article class="joule-feature-card" role="listitem">
+        <div class="jfc-icon">💻</div>
+        <div class="jfc-title">Agentic Thinking</div>
+        <div class="jfc-desc">Joule now has a full computer harness — terminal, Python environment, file system access, and web browser. Enables deep, multi-step reasoning previously impossible with a simple chatbot.</div>
+        <div class="jfc-badge"><span class="badge badge-ga">GA</span></div>
+      </article>
+      <article class="joule-feature-card" role="listitem">
+        <div class="jfc-icon">📊</div>
+        <div class="jfc-title">Spaces</div>
+        <div class="jfc-desc">Intent-driven dashboards that pull live data from multiple sources and compose it into a shareable visual. Static and dynamic at the same time. Share with a colleague in one click.</div>
+        <div class="jfc-badge"><span class="badge badge-ga">GA</span></div>
+      </article>
+      <article class="joule-feature-card" role="listitem">
+        <div class="jfc-icon">🚗</div>
+        <div class="jfc-title">CarPlay &amp; Voice</div>
+        <div class="jfc-desc">Joule Work now runs in Apple CarPlay with full voice support. Hands-free access to business intelligence while driving. "Hey Joule, what's been shared with me?"</div>
+        <div class="jfc-badge"><span class="badge badge-ga">GA</span></div>
+      </article>
+      <article class="joule-feature-card" role="listitem">
+        <div class="jfc-icon">📱</div>
+        <div class="jfc-title">Multi-Device Native</div>
+        <div class="jfc-desc">Native macOS and Windows desktop apps. iOS and Android apps with SwiftUI native charts. Optimized for foldable devices like iPhone Duo. One experience, every surface.</div>
+        <div class="jfc-badge"><span class="badge badge-ga">GA</span></div>
+      </article>
+      <article class="joule-feature-card" role="listitem">
+        <div class="jfc-icon">🗺️</div>
+        <div class="jfc-title">Knowledge Graph Expansion</div>
+        <div class="jfc-desc">Now covers the full SAP portfolio — not just S/4HANA. 7M+ fields, 500K+ tables, 15K+ processes. Now tenant-aware: your custom fields and data products added automatically.</div>
+        <div class="jfc-badge"><span class="badge badge-soon">This Quarter</span></div>
+      </article>
+      <article class="joule-feature-card" role="listitem">
+        <div class="jfc-icon">🔗</div>
+        <div class="jfc-title">Third-Party Connected</div>
+        <div class="jfc-desc">Joule Work connects natively to Microsoft 365, ServiceNow, Glean, and more via MCP servers and the Agent Gateway. One interface for your entire technology landscape.</div>
+        <div class="jfc-badge"><span class="badge badge-ga">GA</span></div>
+      </article>
+    </div>
+
+    <!-- Why Strategic -->
+    <div class="fade-in" style="margin-bottom:20px;">
+      <h3>Why Joule Is Strategic</h3>
+    </div>
+    <div class="joule-strategic fade-in" role="list">
+      <div class="js-point" role="listitem">
+        <div class="jsp-num">1</div>
+        <div class="jsp-title">It's the front door to the Autonomous Enterprise</div>
+        <div class="jsp-desc">Every AI agent, every business process, every data product in the SAP platform is accessed through Joule. Whoever controls the interface controls the enterprise AI experience.</div>
+      </div>
+      <div class="js-point" role="listitem">
+        <div class="jsp-num">2</div>
+        <div class="jsp-title">It was battle-tested before launch</div>
+        <div class="jsp-desc">110,000 SAP employees used the redesigned Joule Work for months before announcement. 150+ Early Adopter Care customers validated it. This isn't a beta — it's a proven product.</div>
+      </div>
+      <div class="js-point" role="listitem">
+        <div class="jsp-num">3</div>
+        <div class="jsp-title">It learns and adapts to each user</div>
+        <div class="jsp-desc">Joule remembers your preferences, your working context, and your data patterns. It continuously adapts — becoming more accurate and useful the more you use it.</div>
+      </div>
+    </div>
+
+    <div class="joule-quote fade-in">
+      <blockquote>"The intent to everything — intent to answer, intent to code, intent to outcome. That is what Joule Work delivers: one experience, across every device, knowing your business better than any other AI on the market."</blockquote>
+      <cite>— Philipp Herzig, SAP TechEd 2026 Opening Keynote</cite>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 6 — UNDERSTANDING BDC
+══════════════════════════════════════════════ -->
+<section id="bdc" class="section" aria-labelledby="bdc-heading">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-label">Section 6</div>
+      <h2 id="bdc-heading">Understanding Business Data Cloud</h2>
+      <p>Why SAP talks about BDC constantly — and why it's the foundation that makes all AI work correctly.</p>
+    </div>
+
+    <!-- ELI5 box -->
+    <div class="bdc-elis fade-in" style="margin-bottom:40px;">
+      <div class="elis-title">
+        <span>💡</span> Explain Like I'm New to SAP
+      </div>
+      <p style="font-size:0.95rem;line-height:1.75;color:var(--text-secondary);">
+        Imagine your company runs on 50 different software systems — SAP for finance, Workday for HR, Salesforce for sales, plus dozens of custom tools. Your AI assistant needs to answer questions like "How much are we spending per employee in Germany vs the US?" — but that answer requires combining data from HR, finance, and cost management systems that don't speak to each other.<br><br>
+        The old way: extract everything into a giant warehouse (months of work, expensive, data gets stale). The LLM way: just connect all the systems and let AI figure it out (sounds simple — but AI joining millions of records in real time is like doing the world's worst database join at massive cost).<br><br>
+        <strong>Business Data Cloud's way:</strong> leave data where it lives, provide a semantic layer that knows how it all connects, give AI 850+ pre-built "data products" it can use immediately, and harmonize master data via Reltio — so every system means the same thing by "cost center." Fast. Cheap. Trustworthy.
+      </p>
+    </div>
+
+    <!-- Problem vs Solution -->
+    <div class="fade-in" style="margin-bottom:20px;">
+      <h3>The Problem BDC Solves</h3>
+    </div>
+    <div class="bdc-problem-solution fade-in" role="region" aria-label="Before and after BDC">
+      <div class="bps-before">
+        <div class="bps-label">❌ Before BDC — The Old World</div>
+        <div class="bps-item"><span class="bi-icon">😩</span><p>Data lives in 100+ systems — ERP, HR, CRM, custom apps, on-prem and cloud</p></div>
+        <div class="bps-item"><span class="bi-icon">💸</span><p>ETL pipelines cost millions, take months, and break when systems update</p></div>
+        <div class="bps-item"><span class="bi-icon">🤔</span><p>Master data (cost centers, suppliers) means different things in different systems</p></div>
+        <div class="bps-item"><span class="bi-icon">🐌</span><p>Joining data with an LLM = quadratic complexity — collapses at enterprise scale</p></div>
+        <div class="bps-item"><span class="bi-icon">📅</span><p>Stale data: AI answers questions about last month's reality, not today's</p></div>
+      </div>
+      <div class="bps-arrow" aria-hidden="true">→</div>
+      <div class="bps-after">
+        <div class="bps-label">✅ After BDC — The SAP Way</div>
+        <div class="bps-item"><span class="bi-icon">✨</span><p>SAP Lakehouse connects to all data without moving it — zero-copy via Apache Iceberg</p></div>
+        <div class="bps-item"><span class="bi-icon">⚡</span><p>47% faster, 58% cheaper analytics (Dremio TPC-DS benchmark with 1TB data)</p></div>
+        <div class="bps-item"><span class="bi-icon">🔑</span><p>SAP Reltio creates golden master data records — one truth for every cost center and supplier</p></div>
+        <div class="bps-item"><span class="bi-icon">📦</span><p>850+ SAP-managed data products — semantic, no ETL, just available</p></div>
+        <div class="bps-item"><span class="bi-icon">🎯</span><p>Real-time data products = AI answers today's question, not last month's</p></div>
+      </div>
+    </div>
+
+    <!-- Three Components -->
+    <div class="fade-in" style="margin:48px 0 20px;">
+      <h3>The Three Components of SAP Lakehouse</h3>
+    </div>
+    <div class="bdc-components fade-in" role="list">
+      <article class="bdc-component bdc-hana" role="listitem">
+        <div class="bdc-comp-icon">🔵</div>
+        <div class="bdc-comp-name">SAP HANA Cloud</div>
+        <div class="bdc-comp-desc">The primary engine powering SAP Lakehouse. Stores and processes all SAP-origin data products. The home of 850+ semantic data products — available immediately, no ETL required.</div>
+        <div class="bdc-comp-stat">850+ data products</div>
+      </article>
+      <article class="bdc-component bdc-dremio" role="listitem">
+        <div class="bdc-comp-icon">🌊</div>
+        <div class="bdc-comp-name">Dremio</div>
+        <div class="bdc-comp-desc">Connects to non-SAP data across SQL databases and data lakes — without moving a single record. Apache Iceberg standard. Available Q1 2027.</div>
+        <div class="bdc-comp-stat">47% faster · 58% cheaper</div>
+      </article>
+      <article class="bdc-component bdc-databricks" role="listitem">
+        <div class="bdc-comp-icon">🟡</div>
+        <div class="bdc-comp-name">SAP Databricks</div>
+        <div class="bdc-comp-desc">Full Databricks platform natively in BDC. LakeFlow, Agent Bricks, Unity Gateway, Genie. Plus: Application Data Foundation brings on-prem ECC, BW, and S/4 into BDC.</div>
+        <div class="bdc-comp-stat">On-prem + cloud unified</div>
+      </article>
+    </div>
+
+    <!-- BDC → Joule Connection -->
+    <div class="bdc-joule-connection fade-in" role="region" aria-label="How BDC connects to Joule">
+      <div class="bjc-visual">
+        <div class="bjc-node">BDC<br><small style="font-weight:400;opacity:0.8;">Trusted Data</small></div>
+        <div class="bjc-arrow">→</div>
+        <div class="bjc-node" style="background:var(--sap-teal);">Knowledge Graph<br><small style="font-weight:400;opacity:0.8;">Semantic Context</small></div>
+        <div class="bjc-arrow">→</div>
+        <div class="bjc-node" style="background:var(--sap-navy);">Joule<br><small style="font-weight:400;opacity:0.8;">Correct Answers</small></div>
+      </div>
+      <div>
+        <h4 style="margin-bottom:8px;">How BDC Powers Joule's Accuracy</h4>
+        <p style="font-size:0.88rem;margin:0;">BDC provides the data layer. The Knowledge Graph maps relationships and semantics. Joule draws on both at query time to answer correctly — not approximately. This is why Joule is 2× faster and more accurate than a generic LLM: it isn't guessing through billions of tokens. It knows where the data lives and what it means.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 7 — UNDERSTANDING BTM
+══════════════════════════════════════════════ -->
+<section id="btm" class="section section-alt" aria-labelledby="btm-heading">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-label">Section 7</div>
+      <h2 id="btm-heading">Understanding BTM</h2>
+      <p>Business Transformation Management — SAP's communications and strategy team for the AI platform story.</p>
+    </div>
+
+    <div class="btm-one-line fade-in">
+      <div class="bol-label">BTM in One Sentence</div>
+      <div class="bol-sentence">BTM is SAP's communications team that owns the narrative, messaging, and enablement for the Business AI Platform — the single source of truth for how SAP's AI story gets told to the world.</div>
+    </div>
+
+    <!-- Accordion -->
+    <div class="btm-accordion fade-in" role="region" aria-label="BTM explained at three levels of depth">
+      <div class="btm-acc-item">
+        <button class="btm-acc-trigger" aria-expanded="false" aria-controls="btm-para">
+          BTM in One Paragraph
+          <span class="btm-acc-arrow">▼</span>
+        </button>
+        <div class="btm-acc-body" id="btm-para" role="region">
+          <p>Business Transformation Management (BTM) is the communications and strategy function inside SAP responsible for making the Business AI Platform story land — consistently, credibly, and compellingly — across every audience. BTM owns the messaging frameworks, the communications plans, the event narratives, the innovation guides, and the internal enablement that helps field teams, executives, and communicators talk about SAP's AI capabilities. When someone from SAP stands on stage at TechEd, Sapphire, or SAP Connect and explains the Autonomous Enterprise, the Building Blocks of what they say came from BTM. When a journalist writes about SAP's AI differentiation, the talking points they were given came from BTM. BTM is where the message is made.</p>
+        </div>
+      </div>
+      <div class="btm-acc-item">
+        <button class="btm-acc-trigger" aria-expanded="false" aria-controls="btm-page">
+          BTM in One Page — Full Context
+          <span class="btm-acc-arrow">▼</span>
+        </button>
+        <div class="btm-acc-body" id="btm-page" role="region">
+          <p><strong>What BTM does:</strong> BTM manages the end-to-end communications strategy for SAP's Business AI Platform. This covers three primary areas of work: Planning &amp; Reporting (how we measure and manage the communications program), Messaging &amp; Narratives (what we say and how we say it), and Events &amp; Content (where we say it and how we show up).</p>
+          <br>
+          <p><strong>Why BTM exists:</strong> SAP's Business AI Platform spans dozens of products — Joule, BDC, Integration Suite, Signavio, LeanIX, Cloud ALM, and more. Without a centralized communications function, every product team would tell its own story. BTM ensures those stories cohere into one clear, powerful narrative: the Autonomous Enterprise. BTM also ensures that messaging is consistent whether you're a developer at TechEd, a CFO at Sapphire, or an employee on an internal all-hands call.</p>
+          <br>
+          <p><strong>How BTM connects to SAP's AI strategy:</strong> Every major AI announcement — the three pillars of the Business AI Platform, the Autonomous Enterprise vision, Physical AI by SAP, BDC — has a communications narrative that BTM owns. The Innovation Guides for TechEd, Sapphire, and Connect that field teams use to explain new announcements are BTM deliverables. The fact sheets, the executive messaging, the internal comms frameworks — all of it flows from BTM.</p>
+          <br>
+          <p><strong>Why communicators should care about BTM:</strong> If you are creating content about SAP's AI story — employee communications, customer-facing materials, press materials, executive presentations — BTM is where you find the approved, current, authoritative message. The BTM Link Hub is your single source of truth for messaging, narratives, planning documents, and event content.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Three Clusters -->
+    <div class="fade-in" style="margin:40px 0 20px;">
+      <h3>How BTM Is Organized</h3>
+      <p style="color:var(--text-muted);font-size:0.9rem;">BTM's work falls into three interconnected areas, each supporting a different dimension of the communications program.</p>
+    </div>
+    <div class="btm-clusters fade-in" role="list">
+
+      <div class="btm-cluster btm-planning" role="listitem">
+        <div class="btm-cluster-header">
+          <h4>📋 Planning &amp; Reporting</h4>
+          <p>Program management, tracking, and measurement</p>
+        </div>
+        <div class="btm-cluster-body">
+          <div class="btm-resource">
+            <span class="br-type">PPT</span>
+            <span class="br-name">BAIP H2 Communications Plan</span>
+          </div>
+          <div class="btm-resource">
+            <span class="br-type">SP</span>
+            <span class="br-name">Comms Tracker — BAIP</span>
+          </div>
+          <div class="btm-resource">
+            <span class="br-type">HTML</span>
+            <span class="br-name">H1 Communications Report</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="btm-cluster btm-messaging" role="listitem">
+        <div class="btm-cluster-header">
+          <h4>💬 Messaging &amp; Narratives</h4>
+          <p>What we say, how we say it, to whom</p>
+        </div>
+        <div class="btm-cluster-body">
+          <div class="btm-resource">
+            <span class="br-type">DOC</span>
+            <span class="br-name">GC – Autonomous Enterprise Messaging</span>
+          </div>
+          <div class="btm-resource">
+            <span class="br-type">DOC</span>
+            <span class="br-name">GC – Govern Deep Dive</span>
+          </div>
+          <div class="btm-resource">
+            <span class="br-type">DOC</span>
+            <span class="br-name">Govern Narrative Document</span>
+          </div>
+          <div class="btm-resource">
+            <span class="br-type">DOC</span>
+            <span class="br-name">Integrated Report – Strategy</span>
+          </div>
+          <div class="btm-resource">
+            <span class="br-type">DOC</span>
+            <span class="br-name">Corporate Fact Sheet — BAIP</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="btm-cluster btm-events" role="listitem">
+        <div class="btm-cluster-header">
+          <h4>🎪 Events &amp; Content</h4>
+          <p>Where the story gets told and shown</p>
+        </div>
+        <div class="btm-cluster-body">
+          <div class="btm-resource">
+            <span class="br-type">URL</span>
+            <span class="br-name">Innovation Guide – TechEd 2026</span>
+          </div>
+          <div class="btm-resource">
+            <span class="br-type">URL</span>
+            <span class="br-name">Innovation Guide – Sapphire 2026</span>
+          </div>
+          <div class="btm-resource">
+            <span class="br-type">URL</span>
+            <span class="br-name">Innovation Guide – SAP Connect 2026</span>
+          </div>
+          <div class="btm-resource">
+            <span class="br-type">DOC</span>
+            <span class="br-name">TechEd Keynote Draft</span>
+          </div>
+          <div class="btm-resource">
+            <span class="br-type">SP</span>
+            <span class="br-name">BTM Employee Call Replays</span>
+          </div>
+          <div class="btm-resource">
+            <span class="br-type">↗</span>
+            <span class="br-name">BTM Events H2 2026 Space</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Why communicators care -->
+    <div class="problem-box fade-in" style="margin-top:8px;">
+      <div class="pb-icon">🎯</div>
+      <div>
+        <div class="pb-label">Why Communicators Should Care About BTM</div>
+        <div class="pb-title">BTM is your single source of truth</div>
+        <div class="pb-text">If you are writing employee communications, press materials, executive presentations, or customer-facing content about SAP's AI story — everything you need starts in BTM. The approved messages, the current narratives, the event talking points, the fact sheets. BTM doesn't just report what happened — it shapes how it's understood.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 8 — PRODUCT ECOSYSTEM
+══════════════════════════════════════════════ -->
+<section id="ecosystem" class="section section-dark" aria-labelledby="ecosystem-heading">
+  <div class="container">
+    <div class="section-header centered fade-in">
+      <div class="section-label">Section 8</div>
+      <h2 id="ecosystem-heading">Product Ecosystem</h2>
+      <p>The products that make up SAP's Business AI Platform — what each one is, why it exists, and how it fits the strategy.</p>
+    </div>
+    <div class="ecosystem-grid" role="list">
+
+      <article class="eco-card fade-in" role="listitem" style="border-top:3px solid var(--sap-blue);">
+        <div class="eco-icon">🏛️</div>
+        <div class="eco-name">Business AI Platform (BAIP)</div>
+        <div class="eco-category">Foundation</div>
+        <div class="eco-what">SAP's unified enterprise AI foundation. The platform everything else runs on. Three pillars: Build, Contextualize &amp; Reason, Govern. One-click provisioning.</div>
+        <div class="eco-why">Why it matters: This is SAP's strategic bet — all AI capability flows through here. It's the moat.</div>
+      </article>
+
+      <article class="eco-card fade-in" role="listitem" style="border-top:3px solid #60A5FA;">
+        <div class="eco-icon">💬</div>
+        <div class="eco-name">Joule / Joule Work</div>
+        <div class="eco-category">Experience Layer</div>
+        <div class="eco-what">The AI-first interface for every SAP user. Conversations, Spaces, Agentic Thinking. Available on every device including CarPlay. Tested with 110K SAP employees.</div>
+        <div class="eco-why">Why it matters: It's how every employee — not just developers — accesses the entire Autonomous Enterprise.</div>
+      </article>
+
+      <article class="eco-card fade-in" role="listitem" style="border-top:3px solid #818CF8;">
+        <div class="eco-icon">🔨</div>
+        <div class="eco-name">Joule Studio</div>
+        <div class="eco-category">Development Environment</div>
+        <div class="eco-what">The single place to build, extend, and deploy AI agents. Intent-based development: 13 hours → 2.5 hours. 50% lower token cost. Automatic test generation and Cloud ALM integration.</div>
+        <div class="eco-why">Why it matters: Makes every organization able to customize AI for their specific business — not just generic use.</div>
+      </article>
+
+      <article class="eco-card fade-in" role="listitem" style="border-top:3px solid var(--sap-teal);">
+        <div class="eco-icon">☁️</div>
+        <div class="eco-name">Business Data Cloud (BDC)</div>
+        <div class="eco-category">Data Foundation</div>
+        <div class="eco-what">Connects all enterprise data without moving it. SAP Lakehouse (HANA Cloud + Dremio + Databricks). Reltio MDM. 850+ semantic data products. Makes AI answers trustworthy.</div>
+        <div class="eco-why">Why it matters: AI is only as good as its data. BDC is what makes SAP's AI correct, not just fast.</div>
+      </article>
+
+      <article class="eco-card fade-in" role="listitem" style="border-top:3px solid #2DD4BF;">
+        <div class="eco-icon">🔵</div>
+        <div class="eco-name">SAP HANA Cloud</div>
+        <div class="eco-category">Data Engine</div>
+        <div class="eco-what">The primary compute engine inside SAP Lakehouse. Stores and processes all SAP-origin data products. The home of AI innovation — generative AI, agentic memory, and future capabilities land here first.</div>
+        <div class="eco-why">Why it matters: HANA on-prem customers locked out of all future AI innovation — migration path critical.</div>
+      </article>
+
+      <article class="eco-card fade-in" role="listitem" style="border-top:3px solid #F59E0B;">
+        <div class="eco-icon">🗺️</div>
+        <div class="eco-name">SAP Knowledge Graph</div>
+        <div class="eco-category">Context Layer</div>
+        <div class="eco-what">Maps 7M+ fields, 500K+ tables, 15K+ business processes across the SAP portfolio. Now tenant-aware — custom extensions automatically indexed. The "map" that makes AI answers accurate.</div>
+        <div class="eco-why">Why it matters: This is the single biggest reason SAP's AI is more accurate than generic LLMs.</div>
+      </article>
+
+      <article class="eco-card fade-in" role="listitem" style="border-top:3px solid #34D399;">
+        <div class="eco-icon">🤖</div>
+        <div class="eco-name">AI Agents (300+)</div>
+        <div class="eco-category">Autonomous Suite</div>
+        <div class="eco-what">40 assistants + 300+ agents covering finance, HR, procurement, supply chain, operations, manufacturing. All ISO/SOC compliant. SAP-managed. Available now. Extend without rebuilding.</div>
+        <div class="eco-why">Why it matters: Customers have a 300-agent head start — competitors building from scratch are years behind.</div>
+      </article>
+
+      <article class="eco-card fade-in" role="listitem" style="border-top:3px solid #A78BFA;">
+        <div class="eco-icon">🔌</div>
+        <div class="eco-name">Integration Suite + Enterprise AI Gateway</div>
+        <div class="eco-category">Connectivity Layer</div>
+        <div class="eco-what">SAP Integration Suite is the connectivity backbone. Enterprise AI Gateway adds a full AI control plane: rate limiting, routing, protocol translation, IAM, and observability for all MCPs, APIs, and LLMs.</div>
+        <div class="eco-why">Why it matters: The control plane for every AI interaction across the enterprise — not just SAP.</div>
+      </article>
+
+      <article class="eco-card fade-in" role="listitem" style="border-top:3px solid #F97316;">
+        <div class="eco-icon">📈</div>
+        <div class="eco-name">SAP Signavio</div>
+        <div class="eco-category">Process Intelligence</div>
+        <div class="eco-what">Process mining and intelligence. Identifies where AI creates most value. Agent Mining (GA) reveals where agents deviate, stall, or underperform. €3.5B in optimization potential identified with customers.</div>
+        <div class="eco-why">Why it matters: Proves the ROI of AI deployments — turns "AI is working" from a feeling into a number.</div>
+      </article>
+
+      <article class="eco-card fade-in" role="listitem" style="border-top:3px solid #EC4899;">
+        <div class="eco-icon">🏗️</div>
+        <div class="eco-name">LeanIX</div>
+        <div class="eco-category">Enterprise Architecture</div>
+        <div class="eco-what">Enterprise architecture and technology intelligence. Published the research showing only 17% of companies can see what their AI agents do — the gap that SAP's Govern pillar is designed to close.</div>
+        <div class="eco-why">Why it matters: Provides the data foundation for architecture-level decisions and AI governance prioritization.</div>
+      </article>
+
+      <article class="eco-card fade-in" role="listitem" style="border-top:3px solid #10B981;">
+        <div class="eco-icon">🛠️</div>
+        <div class="eco-name">SAP Build / CAP / Fiori</div>
+        <div class="eco-category">App Development</div>
+        <div class="eco-what">The application development platform. CAP (Cloud Application Programming model), Fiori UX, and SAP Build low-code tools. Now partnered with Vercel for modern app-building inside Joule Studio.</div>
+        <div class="eco-why">Why it matters: Not everything is an AI agent — this is the platform for building the rest of the experience.</div>
+      </article>
+
+      <article class="eco-card fade-in" role="listitem" style="border-top:3px solid #6366F1;">
+        <div class="eco-icon">🖱️</div>
+        <div class="eco-name">WalkMe / Computer Use Agents</div>
+        <div class="eco-category">Digital Adoption</div>
+        <div class="eco-what">Digital adoption platform that powers the Joule Action Bar (omnipresent across browser tabs and desktop). Computer use agents turn any web UI into an API — agents for systems with no integration.</div>
+        <div class="eco-why">Why it matters: Enables AI agents to operate any web application — dramatically expanding what can be automated.</div>
+      </article>
+
+      <article class="eco-card fade-in" role="listitem" style="border-top:3px solid #64748B;">
+        <div class="eco-icon">🔍</div>
+        <div class="eco-name">SAP Cloud ALM</div>
+        <div class="eco-category">Lifecycle Management</div>
+        <div class="eco-what">Application lifecycle management and observability for all AI agents. Automatic test generation, evaluation, tracing, and incident management — no wiring required. Also powers migration agents (7 for ECC → S/4).</div>
+        <div class="eco-why">Why it matters: The operational backbone that makes running 300+ agents in production manageable.</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 9 — COMMUNICATOR TOOLKIT
+══════════════════════════════════════════════ -->
+<section id="toolkit" class="section" aria-labelledby="toolkit-heading">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-label">Section 9</div>
+      <h2 id="toolkit-heading">Communicator Toolkit</h2>
+      <p>Everything you need to explain SAP's AI story to any audience — tailored by role, ready to use.</p>
+    </div>
+
+    <!-- Key Messages -->
+    <div class="key-messages-box fade-in">
+      <h3>3 Universal Key Messages</h3>
+      <div class="km-item">
+        <div class="km-dot"></div>
+        <p>SAP has built the world's only enterprise AI platform that combines business context (50 years of domain expertise), real-time trusted data (Business Data Cloud), and end-to-end governance (EU AI Act aligned) — in one click.</p>
+      </div>
+      <div class="km-item">
+        <div class="km-dot"></div>
+        <p>The Autonomous Enterprise is not a future vision — it is available today, with 300+ agents across every business domain, ready to run in every customer's existing SAP landscape.</p>
+      </div>
+      <div class="km-item">
+        <div class="km-dot"></div>
+        <p>For the first time, SAP's AI extends from the back office to the factory floor: Physical AI by SAP connects business decisions to autonomous robots, turning maintenance alerts into physical action.</p>
+      </div>
+    </div>
+
+    <!-- Audience Tabs -->
+    <div class="toolkit-container fade-in">
+      <div class="toolkit-tabs" role="tablist" aria-label="Select audience">
+        <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-employees">Employees</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-customers">Customers</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-journalists">Journalists</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-analysts">Analysts</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-executives">Executives</button>
+      </div>
+
+      <div id="tab-employees" class="tab-panel active" role="tabpanel">
+        <div class="toolkit-panel-grid">
+          <div class="tk-card">
+            <div class="tkc-label">Talking Point</div>
+            <p id="emp-pitch" class="tkc-text">SAP's AI doesn't just answer questions — it takes action on your behalf, across every business process, in a secure and governed way. Think of Joule Work as an AI colleague who knows every SAP system, every process, and every compliance rule — and gets things done.</p>
+            <button class="copy-btn" data-target="emp-pitch">📋 Copy Talking Point</button>
+          </div>
+          <div class="tk-card">
+            <div class="tkc-label">Elevator Pitch (30 seconds)</div>
+            <p id="emp-elevator" class="tkc-text">SAP has turned 50 years of business knowledge into an AI that works for you — not just alongside you. Joule Work knows your data, understands your workflows, and handles tasks across every business system so you can focus on decisions that need human judgment.</p>
+            <button class="copy-btn" data-target="emp-elevator">📋 Copy Elevator Pitch</button>
+            <div class="tkc-headline">Example Headline: "Your AI colleague just got a full upgrade — here's what Joule Work can do for you"</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-customers" class="tab-panel" role="tabpanel">
+        <div class="toolkit-panel-grid">
+          <div class="tk-card">
+            <div class="tkc-label">Talking Point</div>
+            <p id="cust-pitch" class="tkc-text">You don't need to build AI from scratch. SAP delivers 300+ ready-to-run agents that already know your data, your processes, and your compliance requirements. Novartis went from decision to live Sourcing Assistant in days — not months. The standard agent is your starting point; you extend it for your specific needs without rebuilding anything.</p>
+            <button class="copy-btn" data-target="cust-pitch">📋 Copy Talking Point</button>
+          </div>
+          <div class="tk-card">
+            <div class="tkc-label">Elevator Pitch (30 seconds)</div>
+            <p id="cust-elevator" class="tkc-text">SAP gives you 300 AI agents on day one — covering every major business function, already compliant, already connected to your data. One click activates the platform. The question isn't whether you can afford AI — it's which process you want to automate first.</p>
+            <button class="copy-btn" data-target="cust-elevator">📋 Copy Elevator Pitch</button>
+            <div class="tkc-headline">Example Headline: "300 AI agents. Every business domain. One click."</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-journalists" class="tab-panel" role="tabpanel">
+        <div class="toolkit-panel-grid">
+          <div class="tk-card">
+            <div class="tkc-label">Talking Point</div>
+            <p id="press-pitch" class="tkc-text">SAP is the first enterprise platform to extend AI from the back office to the factory floor — literally connecting business decisions to robots. At TechEd 2026, a Boston Dynamics robot was dispatched by SAP software to inspect a pump, confirmed a sensor alert, and found a second problem the sensors missed. The work order was generated automatically. That's not a demo — that's production-ready at Intel's Chengdu facility today.</p>
+            <button class="copy-btn" data-target="press-pitch">📋 Copy Talking Point</button>
+          </div>
+          <div class="tk-card">
+            <div class="tkc-label">Elevator Pitch (30 seconds)</div>
+            <p id="press-elevator" class="tkc-text">SAP just connected enterprise AI to robots. While the market debates AI chatbots, SAP is deploying AI that dispatches physical robots, finds problems sensors miss, and writes its own work orders. This is what the Autonomous Enterprise actually looks like.</p>
+            <button class="copy-btn" data-target="press-elevator">📋 Copy Elevator Pitch</button>
+            <div class="tkc-headline">Example Headline: "SAP sends a robot to fix a broken pump — and it finds a problem the sensors missed"</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-analysts" class="tab-panel" role="tabpanel">
+        <div class="toolkit-panel-grid">
+          <div class="tk-card">
+            <div class="tkc-label">Talking Point</div>
+            <p id="analyst-pitch" class="tkc-text">SAP's differentiation is context: 50 years of business process knowledge embedded in the Knowledge Graph means SAP's AI answers correctly, while a generic LLM guesses. The same AI model with SAP business context answers 2× faster and more accurately than without it — not because the model is different, but because the Knowledge Graph eliminates the token-expensive trial-and-error of an AI navigating an unfamiliar system.</p>
+            <button class="copy-btn" data-target="analyst-pitch">📋 Copy Talking Point</button>
+          </div>
+          <div class="tk-card">
+            <div class="tkc-label">Elevator Pitch (30 seconds)</div>
+            <p id="analyst-elevator" class="tkc-text">The SAP Business AI Platform thesis: context is the moat. Joule Work + Knowledge Graph + BDC creates a compounding accuracy advantage — the more SAP data a customer runs, the more accurate their AI becomes, and the harder it is for any generic AI platform to compete. 7M+ fields, 500K+ tables, 15K+ processes. That context took 50 years to build.</p>
+            <button class="copy-btn" data-target="analyst-elevator">📋 Copy Elevator Pitch</button>
+            <div class="tkc-headline">Example Headline: "SAP's AI moat: why 50 years of business context changes the GenAI competitive equation"</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-executives" class="tab-panel" role="tabpanel">
+        <div class="toolkit-panel-grid">
+          <div class="tk-card">
+            <div class="tkc-label">Talking Point</div>
+            <p id="exec-pitch" class="tkc-text">One click. SAP provisions, operates, and manages the entire platform. Your team focuses on business outcomes, not infrastructure. The Autonomous Enterprise gives you 300+ AI agents covering every major business function — compliant, governed, and ready to run in your existing SAP landscape. This is not a technology project. It's a business transformation activated in minutes.</p>
+            <button class="copy-btn" data-target="exec-pitch">📋 Copy Talking Point</button>
+          </div>
+          <div class="tk-card">
+            <div class="tkc-label">Elevator Pitch (30 seconds)</div>
+            <p id="exec-elevator" class="tkc-text">SAP has turned 50 years of business knowledge into an AI platform that does the work, not just the research. 300 AI agents, every business domain, one click to activate. Your CFO closes the books 68% faster. Your procurement team saves 15% on total cost. Your operations team responds to supplier risk 60% faster. That's the Autonomous Enterprise.</p>
+            <button class="copy-btn" data-target="exec-elevator">📋 Copy Elevator Pitch</button>
+            <div class="tkc-headline">Example Headline: "SAP's Autonomous Enterprise: one click to activate AI across every business function"</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Differentiators -->
+    <div class="fade-in" style="margin-top:48px;">
+      <h3 style="margin-bottom:20px;">SAP vs The Competition</h3>
+      <div class="differentiators-grid" role="list">
+        <div class="diff-row" role="listitem">
+          <div>
+            <div class="dr-label">Generic AI</div>
+            <div class="dr-generic">Powerful but context-free — doesn't know your ERP data</div>
+          </div>
+          <div class="dr-vs">VS</div>
+          <div>
+            <div class="dr-label">SAP AI</div>
+            <div class="dr-sap">50 years of business context built in from day one</div>
+          </div>
+        </div>
+        <div class="diff-row" role="listitem">
+          <div>
+            <div class="dr-label">Generic AI</div>
+            <div class="dr-generic">You build your own governance — compliance is your problem</div>
+          </div>
+          <div class="dr-vs">VS</div>
+          <div>
+            <div class="dr-label">SAP AI</div>
+            <div class="dr-sap">EU AI Act alignment and ISO/SOC compliance built in from day one</div>
+          </div>
+        </div>
+        <div class="diff-row" role="listitem">
+          <div>
+            <div class="dr-label">Other ERP Vendors</div>
+            <div class="dr-generic">Back-office AI only — factory floor and physical world separate</div>
+          </div>
+          <div class="dr-vs">VS</div>
+          <div>
+            <div class="dr-label">SAP AI</div>
+            <div class="dr-sap">Physical AI bridges digital and physical — back office to factory floor</div>
+          </div>
+        </div>
+        <div class="diff-row" role="listitem">
+          <div>
+            <div class="dr-label">DIY AI Platforms</div>
+            <div class="dr-generic">Build everything: data pipelines, agents, integrations, governance</div>
+          </div>
+          <div class="dr-vs">VS</div>
+          <div>
+            <div class="dr-label">SAP AI</div>
+            <div class="dr-sap">300+ agents out of the box; extend, don't rebuild. One click to start.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 10 — STUDY GUIDE
+══════════════════════════════════════════════ -->
+<section id="study" class="section section-alt" aria-labelledby="study-heading">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-label">Section 10</div>
+      <h2 id="study-heading">Study Guide</h2>
+      <p>A progressive learning path — start where you are, check off what you know, and advance at your own pace.</p>
+    </div>
+
+    <div class="study-container fade-in">
+      <div style="margin-bottom:24px;">
+        <div class="study-tabs" role="tablist" aria-label="Select learning level">
+          <button class="study-tab active" role="tab" aria-selected="true" aria-controls="study-beginner">Beginner</button>
+          <button class="study-tab" role="tab" aria-selected="false" aria-controls="study-intermediate">Intermediate</button>
+          <button class="study-tab" role="tab" aria-selected="false" aria-controls="study-advanced">Advanced</button>
+        </div>
+      </div>
+
+      <!-- Beginner -->
+      <div id="study-beginner" class="study-panel active" role="tabpanel">
+        <p class="study-panel-intro">New to SAP AI? Start here. These are the five things you need to understand before anything else makes sense.</p>
+        <div class="study-checklist" role="list">
+          <div class="study-item" role="listitem" tabindex="0">
+            <div class="study-checkbox" role="checkbox" aria-checked="false" aria-label="Mark as completed" tabindex="0">
+              <span class="study-check-icon">✓</span>
+            </div>
+            <div class="study-item-body">
+              <div class="si-title">What is SAP AI and the Autonomous Enterprise?</div>
+              <div class="si-desc">SAP's strategy to reimagine every business process end-to-end with AI. Not AI as a feature — AI as the operating model. Read Section 2 (The Big Picture) of this hub.</div>
+            </div>
+          </div>
+          <div class="study-item" role="listitem" tabindex="0">
+            <div class="study-checkbox" role="checkbox" aria-checked="false" aria-label="Mark as completed" tabindex="0">
+              <span class="study-check-icon">✓</span>
+            </div>
+            <div class="study-item-body">
+              <div class="si-title">What is Joule?</div>
+              <div class="si-desc">Joule Work is SAP's AI-first interface — how every user interacts with SAP's AI. It's not a chatbot: it knows your SAP data, your processes, and can take action, not just answer. Read Section 5 of this hub.</div>
+            </div>
+          </div>
+          <div class="study-item" role="listitem" tabindex="0">
+            <div class="study-checkbox" role="checkbox" aria-checked="false" aria-label="Mark as completed" tabindex="0">
+              <span class="study-check-icon">✓</span>
+            </div>
+            <div class="study-item-body">
+              <div class="si-title">What is Business Data Cloud (BDC)?</div>
+              <div class="si-desc">SAP's data foundation that connects all enterprise data without moving it — making AI answers trustworthy. Think of it as "AI is only as good as its data, and BDC is how SAP makes the data good." Read Section 6.</div>
+            </div>
+          </div>
+          <div class="study-item" role="listitem" tabindex="0">
+            <div class="study-checkbox" role="checkbox" aria-checked="false" aria-label="Mark as completed" tabindex="0">
+              <span class="study-check-icon">✓</span>
+            </div>
+            <div class="study-item-body">
+              <div class="si-title">What is an AI agent?</div>
+              <div class="si-desc">An AI agent is software that takes actions on your behalf — not just answering questions, but doing things: updating records, sending notifications, inspecting machines, closing purchase orders. SAP has 300+ of them ready to use today.</div>
+            </div>
+          </div>
+          <div class="study-item" role="listitem" tabindex="0">
+            <div class="study-checkbox" role="checkbox" aria-checked="false" aria-label="Mark as completed" tabindex="0">
+              <span class="study-check-icon">✓</span>
+            </div>
+            <div class="study-item-body">
+              <div class="si-title">Why is SAP's AI different from ChatGPT?</div>
+              <div class="si-desc">ChatGPT is powerful but knows nothing about your company. SAP's AI has 50 years of business context, your actual ERP data, your processes, and compliance rules baked in. Same model — much better answers because of context. See the comparison in Section 5.</div>
+            </div>
+          </div>
+        </div>
+        <div class="study-progress-bar" aria-hidden="true"><div class="study-progress-fill" style="width:0%"></div></div>
+        <div class="study-progress-label">0/5 completed</div>
+      </div>
+
+      <!-- Intermediate -->
+      <div id="study-intermediate" class="study-panel" role="tabpanel">
+        <p class="study-panel-intro">You know the basics. Now go deeper into how the platform works and what makes it differentiated.</p>
+        <div class="study-checklist" role="list">
+          <div class="study-item" role="listitem" tabindex="0">
+            <div class="study-checkbox" role="checkbox" aria-checked="false" aria-label="Mark as completed" tabindex="0">
+              <span class="study-check-icon">✓</span>
+            </div>
+            <div class="study-item-body">
+              <div class="si-title">How the three BAIP pillars work together</div>
+              <div class="si-desc">Build (make agents), Contextualize &amp; Reason (make them accurate), Govern (make them safe). Each pillar depends on the others — you can't govern what you can't see; you can't reason without good data. Read Section 4.</div>
+            </div>
+          </div>
+          <div class="study-item" role="listitem" tabindex="0">
+            <div class="study-checkbox" role="checkbox" aria-checked="false" aria-label="Mark as completed" tabindex="0">
+              <span class="study-check-icon">✓</span>
+            </div>
+            <div class="study-item-body">
+              <div class="si-title">How the AI governance loop works</div>
+              <div class="si-desc">5 phases: Discover (AI Agent Discovery) → Assess (EU AI Act risk classification) → Enforce (Enterprise AI Gateway blocks unverified agents) → Monitor (Cloud ALM traces all activity) → Optimize (Signavio Agent Mining finds improvements). See Section 4, Govern pillar.</div>
+            </div>
+          </div>
+          <div class="study-item" role="listitem" tabindex="0">
+            <div class="study-checkbox" role="checkbox" aria-checked="false" aria-label="Mark as completed" tabindex="0">
+              <span class="study-check-icon">✓</span>
+            </div>
+            <div class="study-item-body">
+              <div class="si-title">Why Joule is more accurate than a generic LLM</div>
+              <div class="si-desc">The SAP Knowledge Graph maps 7M+ fields, 500K+ tables, 15K+ processes — Joule uses this at query time to find the right answer directly, instead of letting an LLM guess through trial and error. Result: 2× faster and more accurate. See Section 5.</div>
+            </div>
+          </div>
+          <div class="study-item" role="listitem" tabindex="0">
+            <div class="study-checkbox" role="checkbox" aria-checked="false" aria-label="Mark as completed" tabindex="0">
+              <span class="study-check-icon">✓</span>
+            </div>
+            <div class="study-item-body">
+              <div class="si-title">Key metrics and proof points</div>
+              <div class="si-desc">Memorize these: 68% faster close, 15% TCO reduction, 60% faster supplier risk, €3.5B optimization potential, 47% faster analytics, 50% lower dev cost, 2× faster AI answers. Know the source for each (which assistant/product delivers which metric).</div>
+            </div>
+          </div>
+          <div class="study-item" role="listitem" tabindex="0">
+            <div class="study-checkbox" role="checkbox" aria-checked="false" aria-label="Mark as completed" tabindex="0">
+              <span class="study-check-icon">✓</span>
+            </div>
+            <div class="study-item-body">
+              <div class="si-title">BTM's role and where to find approved messaging</div>
+              <div class="si-desc">Business Transformation Management owns the narrative for all Business AI Platform communications. The BTM Link Hub is your source of truth: messaging docs, fact sheets, Innovation Guides for TechEd/Sapphire/Connect, planning docs. See Section 7.</div>
+            </div>
+          </div>
+        </div>
+        <div class="study-progress-bar" aria-hidden="true"><div class="study-progress-fill" style="width:0%"></div></div>
+        <div class="study-progress-label">0/5 completed</div>
+      </div>
+
+      <!-- Advanced -->
+      <div id="study-advanced" class="study-panel" role="tabpanel">
+        <p class="study-panel-intro">For expert-level understanding. These topics prepare you to brief analysts, executives, and senior journalists.</p>
+        <div class="study-checklist" role="list">
+          <div class="study-item" role="listitem" tabindex="0">
+            <div class="study-checkbox" role="checkbox" aria-checked="false" aria-label="Mark as completed" tabindex="0">
+              <span class="study-check-icon">✓</span>
+            </div>
+            <div class="study-item-body">
+              <div class="si-title">SAP's platform architecture — the four layers</div>
+              <div class="si-desc">Experience (Joule Work) → Agents &amp; Assistants (Autonomous Suite, 300+ agents) → Data (Business Data Cloud: SAP Lakehouse + Reltio + Knowledge Graph) → Govern (AI Agent Discovery → AI Governance Assistant → Enterprise AI Gateway → Cloud ALM → Signavio Agent Mining). Single-click provisioning connects all four layers. See Section 8.</div>
+            </div>
+          </div>
+          <div class="study-item" role="listitem" tabindex="0">
+            <div class="study-checkbox" role="checkbox" aria-checked="false" aria-label="Mark as completed" tabindex="0">
+              <span class="study-check-icon">✓</span>
+            </div>
+            <div class="study-item-body">
+              <div class="si-title">Migration paths and EOL timelines</div>
+              <div class="si-desc">ECC 2027, PI/PO 2027, Neo 2028, NetWeaver Java 2028, BW 2034. Each has AI migration tooling: Data Management Assistant (months → days), 22 Neo skills (9 days → hours), 7 Cloud ALM migration agents. AI is not just the destination — it's the vehicle. Know this because ECC migration is the biggest customer conversation in SAP right now.</div>
+            </div>
+          </div>
+          <div class="study-item" role="listitem" tabindex="0">
+            <div class="study-checkbox" role="checkbox" aria-checked="false" aria-label="Mark as completed" tabindex="0">
+              <span class="study-check-icon">✓</span>
+            </div>
+            <div class="study-item-body">
+              <div class="si-title">Full product ecosystem relationships</div>
+              <div class="si-desc">Understand how each product connects: BDC feeds Knowledge Graph feeds Joule. Joule Studio builds agents that run on the Autonomous Suite. Integration Suite + Enterprise AI Gateway govern all agent traffic. Cloud ALM monitors everything Joule Studio deploys. Signavio mines patterns from Cloud ALM data. Map this web before briefing analysts.</div>
+            </div>
+          </div>
+          <div class="study-item" role="listitem" tabindex="0">
+            <div class="study-checkbox" role="checkbox" aria-checked="false" aria-label="Mark as completed" tabindex="0">
+              <span class="study-check-icon">✓</span>
+            </div>
+            <div class="study-item-body">
+              <div class="si-title">Tailored communications for each stakeholder type</div>
+              <div class="si-desc">Practice the five audience-specific pitches from Section 9. Key insight: the same facts land differently with different audiences. Employees care about how their work changes. Customers want quick value. Journalists want the "first ever" story (Physical AI). Analysts want the moat argument (context). Executives want one-click + ROI.</div>
+            </div>
+          </div>
+          <div class="study-item" role="listitem" tabindex="0">
+            <div class="study-checkbox" role="checkbox" aria-checked="false" aria-label="Mark as completed" tabindex="0">
+              <span class="study-check-icon">✓</span>
+            </div>
+            <div class="study-item-body">
+              <div class="si-title">All 18 TechEd announcements with context</div>
+              <div class="si-desc">Know not just what was announced, but why it matters and what it replaces. Joule Work redesign → agentic thinking harness replaces simple tool-calling. BDC Ontology Manager → extends Knowledge Graph beyond SAP canonical data. Tenant-aware Knowledge Graph → custom extensions auto-indexed. Enterprise AI Gateway → full AI control plane, not just routing. See Section 1 for all 18.</div>
+            </div>
+          </div>
+        </div>
+        <div class="study-progress-bar" aria-hidden="true"><div class="study-progress-fill" style="width:0%"></div></div>
+        <div class="study-progress-label">0/5 completed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ── Footer ── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">SAP TechEd 2026 — Learning Hub</div>
+    <div class="footer-sub">Created for SAP communications professionals · Based on the SAP TechEd 2026 Opening Keynote</div>
+    <div class="footer-links">
+      <a href="#teched">What Happened</a>
+      <a href="#big-picture">Big Picture</a>
+      <a href="#baip">AI Platform</a>
+      <a href="#joule">Joule</a>
+      <a href="#bdc">BDC</a>
+      <a href="#btm">BTM</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#study">Study Guide</a>
+    </div>
+    <a href="#hero" class="back-to-top">↑ Back to Top</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
